@@ -29,7 +29,8 @@ if DEBUG :
     print (f"[*] (debug) chosen secret: {SECRET}")
 
 res =dns .resolver .Resolver (configure =False )
-res .nameservers =["10.0.0.53"]
+res .nameservers =["127.0.0.1"]
+res .port =54 
 res .timeout =2.0
 res .lifetime =2.0
 

@@ -4,8 +4,8 @@ import time
 
 
 
-IP ="0.0.0.0"
-PORT =53
+IP ="127.0.0.1"
+PORT =54
 
 sock =socket .socket (socket .AF_INET ,socket .SOCK_DGRAM )
 sock .bind ((IP ,PORT ))
@@ -27,22 +27,6 @@ while True :
     ancount =b'\x00\x01'
     nscount =b'\x00\x00'
     arcount =b'\x00\x00'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     response =trans_id +flags +qdcount +ancount +nscount +arcount
 

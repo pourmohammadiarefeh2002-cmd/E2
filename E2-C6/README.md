@@ -5,14 +5,11 @@ Goal
 - The origin server chooses content based on the `Host:` header.
 - If you can make the middlebox see only `allowed.com` early, you can still reach the forbidden host at the origin.
 
-Run
-```bash
-docker compose up --build
-```
+### SOLUTION
 
-Targets
-- Connect to `127.0.0.1:8443` (the middlebox).
-- The origin is internal.
+We need to ensure "forbidden.com" appears AFTER the first 64 bytes. We need to send more than 64 bytes that don't contain forbidden.com. Then send the rest with the Host header. Actually, we use the fact that the middlebox only checks first 64 bytes.
+    
 
-Student task
-- Write `solve.py` so the origin returns the flag.
+    
+    
+

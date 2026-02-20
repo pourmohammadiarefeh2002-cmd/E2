@@ -6,10 +6,14 @@ Goal
 - You can jam only the ACK at the right time.
 - If you jam too much, the receiver detects you.
 
-Run
-```bash
-docker compose up --build
-```
+## SOLUTION
+in this qiestion first i wait for the each following lines to recieve after that i sent jamming message:
 
-Student task
-- Implement `solve_jam.py` so the receiver prints a flag.
+"--- RF LINK ESTABLISHED ---\n"
+"EVENT: DATA_FRAME_START\n"
+"EVENT: DATA_FRAME_END\n"
+"EVENT: SIFS_WAIT\n"
+"EVENT: ACK_WINDOW_OPEN\n"
+
+then i looked for the flag in the recieved messages. 
+the result is in the image in the same directory. y
