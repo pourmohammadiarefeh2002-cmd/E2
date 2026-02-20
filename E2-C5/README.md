@@ -7,7 +7,7 @@ Goal
 - If you jam too much, the receiver detects you.
 
 ## SOLUTION
-in this qiestion first i wait for the each following lines to recieve after that i sent jamming message:
+in this qiestion first i wait for the each following lines to recieve after that i sent 3 "jamming" messages:
 
 "--- RF LINK ESTABLISHED ---\n"
 "EVENT: DATA_FRAME_START\n"
